@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" > 
+	<head> 
+		<title>Sample of Smooth Scrolling</title> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script> 
+	</head> 
+
+	<body> 
+		<a name="hit_top" id="hit_top"></a> 
+		<a class="scroll" href="#hit_bottom"> Scroll To Bottom </a> | 
+		<a class="scroll" href="#hit_middle"> Scroll To Middle </a> | 
+		<a class="scroll" href="#hit_one"> Scroll To One </a> | 
+		<a class="scroll" href="#hit_two"> Scroll To Two </a> | 
+
+		<div style="background-color:#ffee44;">   
+			<div style="margin-top:500px;padding-top:100px;background-color:#ff2288;"> 
+				<a name="hit_one" id="hit_one"></a> You have hit One<br /><br /> 
+				<a class="scroll" href="#hit_bottom"> Scroll To Bottom </a> | 
+				<a class="scroll" href="#hit_middle"> Scroll To Middle </a> | 
+				<a class="scroll" href="#hit_two"> Scroll To Two </a> | 
+				<a class="scroll" href="#hit_top"> Scroll To Top</a> 
+			</div> 
+
+			<div style="margin-top:500px;padding-top:100px;background-color:#ff2200;"> 
+				<a name="hit_two" id="hit_two"></a> You have hit two<br /><br /> 
+				<a class="scroll" href="#hit_bottom"> Scroll To Bottom </a> | 
+				<a class="scroll" href="#hit_middle"> Scroll To Middle </a> |
+				<a class="scroll" href="#hit_one"> Scroll To One </a> | 
+				<a class="scroll" href="#hit_top"> Scroll To Top</a> 
+			</div> 
+
+			<div style="margin-top:2000px;padding-top:100px;background-color:#ff2288;"> 
+				<a name="hit_middle" id="hit_middle"></a> You have hit the middle. 
+				<a class="scroll" href="#hit_bottom"> Scroll To Bottom </a> | 
+				<a class="scroll" href="#hit_one"> Scroll To One </a> | 
+				<a class="scroll" href="#hit_two"> Scroll To Two </a> | 
+				<a class="scroll" href="#hit_top"> Scroll To Top</a> 
+			</div> 
+
+			<div style="margin-top:1500px;padding-top:100px;background-color:#ff2288;">     
+			</div> 
+		</div> 
+
+		<a name="hit_bottom" id="hit_bottom"></a> You have hit the bottom. <br /> 
+		<a class="scroll" href="#hit_top"> Scroll To Top</a> 
+
+		<script type="text/javascript" src="smoothScroll.js" > </script>
+	</body> 
+</html>
