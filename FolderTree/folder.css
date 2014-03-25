@@ -1,0 +1,29 @@
+body 
+{
+
+	font-family: monospace;
+}
+
+.expander {
+	padding-right:5px;
+	cursor:pointer;
+}
+
+
+span {
+	padding-left: 3px;
+	display: inline-block;
+	width: 200px;
+	cursor:pointer;
+}
+
+span.selected
+{
+	padding-left: 3px;
+	background-color: #f5fefd;
+	border: #c6fbf6 outset 1px;
+}
+
+li {
+	line-height: 24px;	
+}
