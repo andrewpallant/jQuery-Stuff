@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Modal Example by Andrew Pallant (@LDNDeveloper) - www.ldndeveloper.com</title>
+
+    <link href="modalPrompt.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div id="wrapperDiv">
+
+        <h2>Main Body</h2>
+        <br/><br/>
+        <input type="button" value="Show Prompt" id="btnTest" />
+        <input type="button" value="Show Info" id="btnShowInfo" />
+        <br/><br/>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor mauris nisi, a varius nibh cursus ac. Sed eu elit orci. Duis luctus sagittis elit, quis placerat turpis egestas vehicula. Integer vel arcu in mauris adipiscing porttitor nec at nulla. Vestibulum et tristique metus. Integer feugiat ipsum enim, et cursus quam egestas id. Nunc sit amet nisi tincidunt, volutpat felis consectetur, molestie magna. Mauris suscipit, lectus ut ultricies cursus, est nisl vulputate est, ac bibendum felis metus et mauris. Phasellus consectetur facilisis tincidunt. Nulla facilisi. Suspendisse ornare ipsum ullamcorper nunc eleifend, sit amet ultricies leo blandit. Proin eu libero ante.
+
+        Nullam interdum pretium leo, a posuere quam dignissim sit amet. Etiam faucibus diam nibh, nec pretium arcu placerat eu. Nulla facilisi. Ut dapibus, tellus sed ultricies suscipit, lorem ipsum aliquet mi, in feugiat nulla mauris et libero. Donec laoreet sollicitudin egestas. Sed fermentum augue eget elit ullamcorper tincidunt. Pellentesque eget eros quis nibh mollis pellentesque. Vivamus consequat accumsan nunc non congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec suscipit libero quam, non consequat diam ullamcorper in. Aliquam pellentesque adipiscing eros, ut pretium velit convallis vitae. Pellentesque sed lectus eget mi semper faucibus ac lacinia velit. Suspendisse potenti. In convallis vel lectus vitae pharetra. Aenean in tortor fringilla, dapibus enim eu, malesuada nisl. Vivamus mattis, mauris ut pellentesque condimentum, ante arcu dapibus ligula, eget faucibus sapien lorem sed metus.
+
+        In dapibus metus ut diam venenatis, eget sodales diam luctus. Curabitur eget turpis ut nibh congue sagittis. Pellentesque volutpat sollicitudin eros, sed adipiscing velit. Cras ornare ullamcorper augue id gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut et nulla malesuada, tristique ipsum eget, egestas tortor. Aenean ac iaculis erat. Pellentesque lobortis, arcu ut ultrices consequat, enim eros accumsan dolor, eget laoreet ligula augue sit amet purus.
+        
+    </div>
+
+    <div id="backgroundDiv"></div>
+    <div id="infoDiv" class="Modal">        
+        <div id="title">Just For Your Info</div>
+        <div id="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor mauris nisi, a varius nibh cursus ac. Sed eu elit orci. Duis luctus sagittis elit, quis placerat turpis egestas vehicula. Integer vel arcu in mauris adipiscing porttitor nec at nulla. Vestibulum et tristique metus. Integer feugiat ipsum enim, et cursus quam egestas id. Nunc sit amet nisi tincidunt, volutpat felis consectetur, molestie magna. Mauris suscipit, lectus ut ultricies cursus, est nisl vulputate est, ac bibendum felis metus et mauris. Phasellus consectetur facilisis tincidunt. Nulla facilisi. Suspendisse ornare ipsum ullamcorper nunc eleifend, sit amet ultricies leo blandit. Proin eu libero ante.
+            <br/><br/>
+            Nullam interdum pretium leo, a posuere quam dignissim sit amet. Etiam faucibus diam nibh, nec pretium arcu placerat eu. Nulla facilisi. Ut dapibus, tellus sed ultricies suscipit, lorem ipsum aliquet mi, in feugiat nulla mauris et libero. Donec laoreet sollicitudin egestas. Sed fermentum augue eget elit ullamcorper tincidunt. Pellentesque eget eros quis nibh mollis pellentesque. Vivamus consequat accumsan nunc non congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec suscipit libero quam, non consequat diam ullamcorper in. Aliquam pellentesque adipiscing eros, ut pretium velit convallis vitae. Pellentesque sed lectus eget mi semper faucibus ac lacinia velit. Suspendisse potenti. In convallis vel lectus vitae pharetra. Aenean in tortor fringilla, dapibus enim eu, malesuada nisl. Vivamus mattis, mauris ut pellentesque condimentum, ante arcu dapibus ligula, eget faucibus sapien lorem sed metus.
+            <br/><br/>
+            In dapibus metus ut diam venenatis, eget sodales diam luctus. Curabitur eget turpis ut nibh congue sagittis. Pellentesque volutpat sollicitudin eros, sed adipiscing velit. Cras ornare ullamcorper augue id gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut et nulla malesuada, tristique ipsum eget, egestas tortor. Aenean ac iaculis erat. Pellentesque lobortis, arcu ut ultrices consequat, enim eros accumsan dolor, eget laoreet ligula augue sit amet purus.
+        </div>
+        <p style="text-align: center;">
+            <input type="button" style="" class="btnYes" value="OK"/>
+        </p>
+    </div>
+
+    <div id="promptDiv" class="Modal">
+        <br />Deleting this record is permanent.<br/><br/>
+        <strong>Are You Sure?</strong><br/><br/>
+        <p style="text-align: center;"><input type="button" style="" id="btnYes" class="btnYes" value="Yes"/><input type="button" style="" id="btnNo" value="No"/></p>
+    </div>
+    
+    <script type="text/javascript">
+        // Set Up Scripts Required For This Demonstration
+        $(document).ready(function () {
+            // Show Prompt
+            $('#btnTest').click(function () {
+                $('#backgroundDiv').fadeTo("fast", 0.5);
+                $('#promptDiv').show();
+            });
+
+            // Yes Button
+            $('.btnYes').click(function () {
+                $('#backgroundDiv').hide();
+                $('#promptDiv').hide();
+                $('#infoDiv').hide();
+            });
+
+            // No Button
+            $('#btnNo').click(function () {
+                $('#backgroundDiv').hide();
+                $('#promptDiv').hide();
+            });
+
+            // Click to Show Info Back
+            $('#btnShowInfo').click(function () {
+                $('#backgroundDiv').fadeTo("fast", 0.5);
+                $('#infoDiv').show();
+            });
+        });
+    </script>
+
+</body>
+</html>
